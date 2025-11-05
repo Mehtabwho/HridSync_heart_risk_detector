@@ -69,12 +69,7 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'HridSync API is running' })
 })
 
-// Only start server in development (Vercel handles this in production)
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`)
-  })
-}
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`)
+})
 
-// Export the Express app for Vercel
-export default app
