@@ -16,7 +16,7 @@ export default function DietCard({ planText, createdAt }: DietCardProps) {
       <div className="flex items-center gap-3 mb-4">
         <UtensilsCrossed className="w-6 h-6 text-primary-600" />
         <h3 className="text-xl font-bold text-gray-900 dark:text-white">
-          7-Day Diet Plan
+          30-Day Diet Plan
         </h3>
       </div>
       <div className="prose dark:prose-invert max-w-none">
